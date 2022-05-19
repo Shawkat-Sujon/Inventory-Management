@@ -1,0 +1,23 @@
+{% load static %}
+<html>
+	<head>
+		<title>ITEMS</title>
+		<script type="text/javascript" src="{% static 'jquery-3.3.1.min.js' %}"></script>		
+		<script type="text/javascript" charset="utf8" src="{% static 'DataTables/datatables.js' %}"></script>
+		<link rel="stylesheet" type="text/css" href="{% static 'DataTables/datatables.css' %}"/>
+		<script type="text/javascript" charset="utf8" src="{% static 'js/bootstrap.min.js' %}"></script>
+		<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}"/>
+		<link rel="icon" href="https://flyclipart.com/thumb2/inventory-query-inventory-maintenance-icon-with-png-and-vector-886026.png">
+	</head>
+	<body>
+		<nav class="navbar navbar-light bg-light">
+			<a class="navbar-brand" href="#">
+			  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRCXvVyQQuftnMzTo3kFMbIoIV9Yuhd2mj1qF8dJsRIR9NxVAh5VlZ1pLRZbjFHj5f7LY&usqp=CAU" width="30" height="30" class="d-inline-block align-top" alt="">
+			  Dr. Med
+			</a>
+		  </nav>		
+	{% block content%}
+	{% endblock %}
+	<center><a class="btn btn-primary bg-dark" href="/">HOME</a></center>
+	</body>
+</html>
